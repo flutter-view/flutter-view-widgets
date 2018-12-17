@@ -2,7 +2,7 @@ name: flutter_view_tools
 description: Optional Flutter Dart tools library for flutter-view
 author: Christian Vogel <chris.vogel@me.com>
 homepage: https://github.com/flutter-view/flutter-view-tools
-version: 1.0.0
+version: 1.0.1
 
 environment:
   sdk: ">=1.23.0 <3.0.0"
