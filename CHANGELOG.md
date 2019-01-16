@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.5
+
+	- Formatted sources with flutter format
+
 ## 1.0.4
 
 	- Using scoped_model: ^1.0.1
