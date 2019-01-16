@@ -6,11 +6,10 @@ import 'package:flutter_view_tools/flutter_view_tools.dart';
 class ExampleModel extends Model {
 
 	/// This [TextEditingController] controls the text in the input box of the example page.
-	TextEditingController textController;
+	TextEditingController textController = TextEditingController();
 
 	/// This method is called by the [Lifecycle] widget in the example-page, whenever the state is created
 	init() {
-		textController = TextEditingController();
 		// Whenever the text in the input box changes, we want to be informed
 		textController.addListener(onTextChange);
 	}
