@@ -15,4 +15,6 @@ The most important files to check are:
 - [example-model.dart](lib/example-model.dart): This contains the state of the app. Since it extends the Model class, it can call notifyListeners() to inform any listeners that it has changed. This allows the ReactiveWidget in the ExamplePage to watch it, and rerender whenever the example model has changed.
 - [main.dart](lib/main.dart): The startpoint of the app. It creates the ExampleApp and its _ExampleAppState. The _ExampleAppState creates and holds the ExampleModel, and for the home it uses the ExamplePage, passing the model for rendering.
 - [example-page.pug](lib/example-page.pug): The template for the home page of the example app. In this file you see each flutter-view tag being used, with some explanation in the comments.
-- [example-page.dart](example-page.dart): This is the generated Dart code from example-page.pug, after having been processed by the flutter-view console tool.
+- [example-page.dart](lib/example-page.dart): This is the generated Dart code from example-page.pug, after having been processed by the flutter-view console tool.
+
+See the [project page](../) for more information on this project and flutter-view.

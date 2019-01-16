@@ -1,12 +1,11 @@
 # Flutter-View Tools
 
-These tools allow some extra functionality for flutter-view, and are highly recommended for your flutter-view projects.
-
 Flutter-view is a tool that lets you easily create layouts for Flutter, using Pug and Sass.
 [http://flutter-view.io](http://flutter-view.io)
 
-Check out the [documentation](https://docs.flutter-view.io/get-started/installation#installing-flutter-view-tools) on how to get started with this library in your own flutter-view project.
+These tools allow some extra functionality for flutter-view, and are highly recommended for your flutter-view projects.
 
+Check out the [documentation](https://docs.flutter-view.io/get-started/installation#installing-flutter-view-tools) on how to get started with this library in your own flutter-view project.
 Check out the [example project](./example) for a simple project that uses all supported widgets.
 
 The library adds the following widgets:
@@ -28,4 +27,4 @@ A stateful widget that lets you hook into different [lifecycle events](https://f
 A wrapper of a Flutter **StreamWidget**, that monitors a **Listenable** such as a **[Model](https://pub.dartlang.org/documentation/scoped_model/latest/scoped_model/Model-class.html)**, and triggers an update when that **Listenable** updates. This allows for your tree of widgets to respond to model updates.
 
 [Documentation](https://docs.flutter-view.io/reference/tag-shortcuts#reactive)
-[Flutter-view usage guide](https://docs.flutter-view.io/guide/writing-reactive-code)
+| [Usage guide](https://docs.flutter-view.io/guide/writing-reactive-code)
