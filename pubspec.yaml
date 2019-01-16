@@ -1,8 +1,8 @@
 name: flutter_view_tools
-description: Optional Flutter Dart tools library for flutter-view
+description: Flutter Dart tools library for flutter-view. These tools allow some extra functionality for flutter-view, and are highly recommended for your flutter-view projects. Flutter-view is a tool that lets you easily create layouts for Flutter, using Pug and Sass. http://flutter-view.io
 author: Christian Vogel <chris.vogel@me.com>
 homepage: https://github.com/flutter-view/flutter-view-tools
-version: 1.0.2
+version: 1.0.3
 
 environment:
   sdk: ">=1.23.0 <3.0.0"
