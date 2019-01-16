@@ -8,7 +8,7 @@ example-page(flutter-view :model[ExampleModel])
 
 	//- LIFECYCLE EXAMPLE:
 	//- the lifecycle widget here provides callbacks for when the state is created and disposed
-	//- See the Model class for the methods being called
+	//- See the ExampleModel class for the methods being called
 	lifecycle(:on-init='model.init' :on-dispose='model.dispose')
 
 		scaffold
@@ -22,7 +22,6 @@ example-page(flutter-view :model[ExampleModel])
 
 				//- ASSIGN EXAMPLE:
 				//- the assign widget assigns the textcontroller of the model to the variable ctl
-				//- the ctl variable was created by the assign tag
 				assign(name='ctl' :^value='model.textController')
 					//- within this indentation/scope, ctl is assigned and can be used
 

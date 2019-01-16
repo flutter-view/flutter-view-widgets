@@ -1,9 +1,10 @@
 # Flutter-View Tools
 
 Flutter-view is a tool that lets you easily create layouts for Flutter, using Pug and Sass.
+
 [http://flutter-view.io](http://flutter-view.io)
 
-These tools allow some extra functionality for flutter-view, and are highly recommended for your flutter-view projects.
+This package adds some widgets that allow some extra functionality for flutter-view, and are highly recommended for your flutter-view projects.
 
 Check out the [documentation](https://docs.flutter-view.io/get-started/installation#installing-flutter-view-tools) on how to get started with this library in your own flutter-view project.
 Check out the [example project](./example) for a simple project that uses all supported widgets.
