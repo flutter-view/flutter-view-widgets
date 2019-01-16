@@ -17,4 +17,4 @@ The most important files to check are:
 - [example-page.pug](lib/example-page.pug): The template for the home page of the example app. In this file you see each flutter-view tag being used, with some explanation in the comments.
 - [example-page.dart](lib/example-page.dart): This is the generated Dart code from example-page.pug, after having been processed by the flutter-view console tool.
 
-See the [project page](../) for more information on this project and flutter-view.
+See the [project page](https://github.com/flutter-view/flutter-view-tools) for more information on this project and flutter-view.
