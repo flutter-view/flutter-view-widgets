@@ -2,6 +2,7 @@
 
 ## 1.0.6
 
+	- Renamed from flutter_view_tools to flutterview_tools to be able to publish again to pub
 	- Use latest Flutter release
 	- Formatted sources with flutter format
 

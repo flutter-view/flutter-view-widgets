@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 // ignore: unused_import
 import 'package:flutter/cupertino.dart';
 // ignore: unused_import
-import 'package:flutter_view_tools/flutter_view_tools.dart';
+import 'package:flutterview_tools/flutterview_tools.dart';
 // ignore: unused_import
 import 'example-model.dart';
 // ignore: non_constant_identifier_names

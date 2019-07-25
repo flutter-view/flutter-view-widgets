@@ -1,4 +1,4 @@
-name: flutter_view_tools
+name: flutterview_tools
 description: Flutter Dart tools library for flutter-view. These widgets allow some extra functionality for flutter-view, and are highly recommended for your flutter-view projects.
 author: Christian Vogel <chris.vogel@me.com>
 homepage: https://github.com/flutter-view/flutter-view-tools
