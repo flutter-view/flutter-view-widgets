@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.6
+
+	- Use latest Flutter release
+	- Formatted sources with flutter format
+
 ## 1.0.5
 
 	- Formatted sources with flutter format

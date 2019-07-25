@@ -43,7 +43,8 @@ class _LifecycleState extends flutter.State<Lifecycle> {
   build(flutter.BuildContext context) {
     if (this.widget.onBuild != null) this.widget.onBuild(context);
     if (this.widget.onRender != null)
-      flutter.WidgetsBinding.instance.addPostFrameCallback((_) => this.widget.onRender(context));
+      flutter.WidgetsBinding.instance
+          .addPostFrameCallback((_) => this.widget.onRender(context));
     return this.widget.child;
   }
 
