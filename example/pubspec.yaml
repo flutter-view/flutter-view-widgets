@@ -15,7 +15,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutterview_tools:
+  flutter_view_widgets:
     path: ../
 
   # The following adds the Cupertino Icons font to your application.

@@ -1,5 +1,5 @@
 import 'package:flutter/widgets.dart';
-import 'package:flutterview_tools/flutterview_tools.dart';
+import 'package:flutter_view_widgets/flutter_view_widgets.dart';
 
 /// The model of this example app
 /// Because it extends [Model] from the ScopedModel library, other classes can be informed when it updates
