@@ -1,6 +1,6 @@
-import 'package:example/example-page.dart';
-import 'package:example/example-model.dart';
 import 'package:flutter/material.dart';
+import 'example-page.dart';
+import 'example-model.dart';
 
 void main() => runApp(ExampleApp());
 
