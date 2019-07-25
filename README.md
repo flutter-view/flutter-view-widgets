@@ -1,6 +1,6 @@
-# Flutter-view Tools
+# Flutterview Tools
 
-> Notice: this (flutterview-tools) replaces the flutter_view_tools library, which is no longer maintained.
+> Notice: flutterview-tools replaces the flutter_view_tools library, which can no longer maintained due to a loss of Dart pub credentials.
 
 Flutter-view is a tool that lets you easily create layouts for Flutter, using Pug and Sass.
 
