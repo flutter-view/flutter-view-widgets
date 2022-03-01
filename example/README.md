@@ -7,7 +7,6 @@ This app shows you by example how you may use the [Assign](https://github.com/fl
 It is a simple screen that lets you enter a text, and as you type, updates the same text on the screen.
 
 - It demonstrates the *reactive* tag and *ReactiveWidget* by using it to update the text on the screen by monitoring the model
-- It demonstrates the *assign* tag and widget by assigning the text controller to the ctl parameter
 - It demonstrates the *lifecycle* tag and widget by using it to call methods to init and dispose of a listener for the text controller
 
 The most important files to check are:

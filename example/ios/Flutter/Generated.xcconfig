@@ -1,10 +1,14 @@
 // This is a generated file; do not edit or check into version control.
-FLUTTER_ROOT=/Users/christianvogel/Development/flutter
-FLUTTER_APPLICATION_PATH=/Users/christianvogel/Projects/flutter/flutter-view-tools/example
-FLUTTER_TARGET=/Users/christianvogel/Projects/flutter/flutter-view-tools/example/lib/main.dart
+FLUTTER_ROOT=/Users/christian/development/flutter
+FLUTTER_APPLICATION_PATH=/Users/christian/projects/flutter/flutter-view/flutter-view-widgets/example
+COCOAPODS_PARALLEL_CODE_SIGN=true
+FLUTTER_TARGET=/Users/christian/projects/flutter/flutter-view/flutter-view-widgets/example/lib/main.dart
 FLUTTER_BUILD_DIR=build
-SYMROOT=${SOURCE_ROOT}/../build/ios
-FLUTTER_FRAMEWORK_DIR=/Users/christianvogel/Development/flutter/bin/cache/artifacts/engine/ios
 FLUTTER_BUILD_NAME=1.0.0
 FLUTTER_BUILD_NUMBER=1
+EXCLUDED_ARCHS[sdk=iphonesimulator*]=i386
+DART_DEFINES=Zmx1dHRlci5pbnNwZWN0b3Iuc3RydWN0dXJlZEVycm9ycz10cnVl,RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ==
+DART_OBFUSCATION=false
 TRACK_WIDGET_CREATION=true
+TREE_SHAKE_ICONS=false
+PACKAGE_CONFIG=/Users/christian/projects/flutter/flutter-view/flutter-view-widgets/example/.dart_tool/package_config.json

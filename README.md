@@ -2,6 +2,8 @@
 
 > Notice: flutter_view_widgets replaces the flutter_view_tools library, which can no longer maintained due to a loss of Dart pub credentials.
 
+> Notice: version 2.0.0 and up support null safety, and because of this may not be compatible with legacy code. Use the earlier versions if you use Dart before 2.12.
+
 Flutter-view is a tool that lets you easily create layouts for Flutter, using Pug and Sass.
 
 [http://flutter-view.io](http://flutter-view.io)
@@ -12,12 +14,6 @@ Check out the [documentation](https://docs.flutter-view.io/get-started/installat
 Check out the [example project](./example) for a simple project that uses all supported widgets.
 
 The library adds the following widgets:
-
-## Assign
-
-A builder widget used in combination with the flutter-view **assign** tag shortcut, used to assign a value to a new variable in your widget build tree.
-
-[Documentation](https://docs.flutter-view.io/reference/tag-shortcuts#assign)
 
 ## Lifecycle
 

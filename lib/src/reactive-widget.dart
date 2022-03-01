@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/widgets.dart' as flutter;
-import 'package:meta/meta.dart';
 
 /// Widget builder function to be called when the listenable updates.
 /// Passes the [BuildContext] and current [Listenable].
@@ -16,9 +15,7 @@ typedef flutter.Widget ReactiveWidgetBuilder<T extends flutter.Listenable>(
 /// [Listenable], and builds a [StreamBuilder] widget which consumes this stream.
 class ReactiveWidget<T extends flutter.Listenable>
     extends flutter.StatefulWidget {
-  ReactiveWidget({@required this.watch, @required this.builder})
-      : assert(watch != null),
-        assert(builder != null);
+  ReactiveWidget({required this.watch, required this.builder});
 
   /// The model to react to
   final T watch;
@@ -34,7 +31,7 @@ class _ReactiveWidgetState<T extends flutter.Listenable>
     extends flutter.State<ReactiveWidget<T>> {
   // sink gets closed in dispose, bad warning suppressed:
   // ignore: close_sinks
-  StreamController<T> controller;
+  late StreamController<T> controller;
 
   void onUpdate() {
     this.controller.add(this.widget.watch);
@@ -59,8 +56,7 @@ class _ReactiveWidgetState<T extends flutter.Listenable>
       initialData: this.widget.watch,
       stream: this.controller.stream,
       builder: (context, snap) => snap.hasData
-          ? this.widget.builder(context, snap.data)
-          : flutter
-              .Container() // should never happen, since we pass initialData
+          ? this.widget.builder(context, snap.data!)
+          : flutter.Container() // should never happen, since we pass initialData
       );
 }

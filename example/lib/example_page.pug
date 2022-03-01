@@ -1,0 +1,40 @@
+import(package='flutter_view_widgets/flutter_view_widgets.dart')
+import(file='example_model.dart')
+
+//- This is a flutter-view, that renders the example-page, which is the homepage of the app
+//- It expects a parameter model of type [ExampleModel], which contains the data to render, 
+//- as well as page functions
+example-page(flutter-view :model[ExampleModel])
+
+	//- LIFECYCLE EXAMPLE:
+	//- the lifecycle widget here provides callbacks for when the state is created and disposed
+	//- See the ExampleModel class for the methods being called
+	lifecycle(:on-init='model.init' :on-dispose='model.dispose')
+
+		scaffold
+			
+			app-bar(as='appBar')
+				#title(as='title') Example App
+			
+			center(as='body')
+
+				.spacer(height=200)
+
+				.message-box(font-size=20)
+
+					.greeting Hello"', you entered:
+
+					//- REACTIVE EXAMPLE:
+					//- When ExampleModel.notifyListeners is called (when someone types),
+					//- the below reactive widget automatically updates it child, updating the text
+					reactive(watch='model')
+						//- when the text changes in the model, it updates here
+						//- the ctl variable was created by the assign tag above
+						.text ${model.textController.text}
+
+				.spacer(height=200)
+
+				.input(width=200)
+					//- the ctl variable was created by the assign tag above
+					text-field(:controller='model.textController')
+						input-decoration(as='decoration' hint-text='Enter text')
