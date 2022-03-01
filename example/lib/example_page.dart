@@ -6,6 +6,7 @@
 // ignore_for_file: unused_element
 // ignore_for_file: unnecessary_cast
 // ignore_for_file: unnecessary_string_interpolations
+// ignore_for_file: sized_box_for_whitespace
 	
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
@@ -44,7 +45,7 @@ Lifecycle ExamplePage({ required ExampleModel model }) {
                     //-- GREETING ----------------------------------------------------------
                     Container( // project://example/lib/example_page.pug#25,6
                       child: Text( 
-                        'Hello\"\', you entered:',
+                        'Hello, you entered:',
                       ),
                     ),
                     ReactiveWidget( // project://example/lib/example_page.pug#30,6
