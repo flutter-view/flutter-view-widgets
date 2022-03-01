@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.0.0
+## 2.0.0-dev.1
 
 	- Made the library null-safe
 	- Removed Assign widget as in practice it did not make code cleaner or clearer, and it is hard to make null-safe and typed
