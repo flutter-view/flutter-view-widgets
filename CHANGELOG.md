@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.0.0
+
+	- Made the library null-safe
+	- Removed Assign widget as in practice it did not make code cleaner or clearer, and it is hard to make null-safe and typed
+
+	Note: This version requires Dart 2.12 or higher. Use 1.0.6 if you cannot use null safety.
+
 ## 1.0.6
 
 	- Renamed from flutter_view_tools to flutter_view_widgets to be able to publish again to pub
