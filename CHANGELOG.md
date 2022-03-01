@@ -5,7 +5,7 @@
 	- Made the library null-safe
 	- Removed Assign widget as in practice it did not make code cleaner or clearer, and it is hard to make null-safe and typed
 
-	Note: This version requires Dart 2.12 or higher. Use 1.0.6 if you cannot use null safety.
+> Note: This version requires Dart 2.12 or higher. Use 1.0.6 if you cannot use null safety.
 
 ## 1.0.6
 
