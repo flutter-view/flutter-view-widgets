@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.1-dev.1
+
+	- Added Reactive mixin to enable reactivity on entities that already extend a class
+
 ## 2.0.0-dev.1
 
 	- Made the library null-safe
