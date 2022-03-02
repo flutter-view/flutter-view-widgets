@@ -2,7 +2,7 @@
 
 ![Screenshot](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LRHVDDIma_3N68abufD%2F-LWM9V9wMP-C9WhjSbbp%2F-LWM9aQ8XpDfbRzDhcCX%2FScreen%20Shot%202019-01-16%20at%2015.56.18.png?alt=media&token=4906ced2-15fd-478f-a80d-8e9a4eab8d20)
 
-This app shows you by example how you may use the [Assign](https://github.com/flutter-view/flutter-view-tools/blob/master/lib/src/assign.dart), [Lifecycle](https://github.com/flutter-view/flutter-view-tools/blob/master/lib/src/lifecycle.dart), and [ReactiveWidget](https://github.com/flutter-view/flutter-view-tools/blob/master/lib/src/reactive-widget.dart) classes.
+This app shows you by example how you may use the [Lifecycle](https://github.com/flutter-view/flutter-view-tools/blob/master/lib/src/lifecycle.dart), and [ReactiveWidget](https://github.com/flutter-view/flutter-view-tools/blob/master/lib/src/reactive-widget.dart) classes.
 
 It is a simple screen that lets you enter a text, and as you type, updates the same text on the screen.
 
