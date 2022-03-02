@@ -1,11 +1,12 @@
 // ignore_for_file: prefer_const_constructors
 // ignore_for_file: non_constant_identifier_names
 // ignore_for_file: unnecessary_import
-// ignore_for_file: avoid_unnecessary_containers
 // ignore_for_file: dead_code
 // ignore_for_file: unused_element
 // ignore_for_file: unnecessary_cast
 // ignore_for_file: unnecessary_string_interpolations
+// ignore_for_file: invalid_null_aware_operator
+// ignore_for_file: avoid_unnecessary_containers
 // ignore_for_file: sized_box_for_whitespace
 	
 import 'package:flutter/material.dart';
@@ -49,7 +50,7 @@ Lifecycle ExamplePage({ required ExampleModel model }) {
                       ),
                     ),
                     ReactiveWidget( // project://example/lib/example_page.pug#30,6
-                      watch: model as Listenable,
+                      watch: model.changes as Listenable,
                       builder: (context, $) {
                         return 
                         //-- TEXT ----------------------------------------------------------

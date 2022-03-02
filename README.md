@@ -27,3 +27,26 @@ A wrapper of a Flutter **StreamWidget**, that monitors a **Listenable** such as 
 
 [Documentation](https://docs.flutter-view.io/reference/tag-shortcuts#reactive)
 | [Usage guide](https://docs.flutter-view.io/guide/writing-reactive-code)
+
+# Reactive mixin
+
+It also adds the `Reactive` mixin class, that you can use to add reactive behaviors for classes that already extend a model class.
+
+To use extend your entity classes like this:
+
+```Dart
+class MyEntity extends SomeModelClass with Reactive {
+   ...
+}
+```
+
+Then when listening with the [ReactiveWidget], instead of listening for
+the entity itself for changes like you would with a [Model] extending class,
+listen to the `.changes` property instead:
+ 
+```Pug
+some-function(flutter-view)
+   reactive(watch='model.changes')
+     //- code here will change when model.notifyListeners() is called
+ 
+```

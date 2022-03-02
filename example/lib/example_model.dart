@@ -3,7 +3,7 @@ import 'package:flutter_view_widgets/flutter_view_widgets.dart';
 
 /// The model of this example app
 /// Because it extends [Model] from the ScopedModel library, other classes can be informed when it updates
-class ExampleModel extends Model {
+class ExampleModel extends Object with Reactive {
   /// This [TextEditingController] controls the text in the input box of the example page.
   TextEditingController textController = TextEditingController();
 

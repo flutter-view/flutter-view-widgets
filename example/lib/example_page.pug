@@ -27,7 +27,7 @@ example-page(flutter-view :model[ExampleModel])
 					//- REACTIVE EXAMPLE:
 					//- When ExampleModel.notifyListeners is called (when someone types),
 					//- the below reactive widget automatically updates it child, updating the text
-					reactive(watch='model')
+					reactive(watch='model.changes')
 						//- when the text changes in the model, it updates here
 						//- the ctl variable was created by the assign tag above
 						.text ${model.textController.text}
