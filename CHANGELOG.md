@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.2.3-dev.1
+
+	- Reactive bugfix
+
 ## 2.2.1-dev.1
 
 	- Rename State to Reactive to avoid namespace issues, remove old Reactive code since it duplicates ChangeNotifier behavior

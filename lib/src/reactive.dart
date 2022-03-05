@@ -23,12 +23,12 @@ class Reactive<T> extends Model {
   T _value;
 
   /// Gets the current value
-  get value {
+  T get value {
     return _value;
   }
 
   /// Sets the new value, and calls notifyListeners
-  set value(newValue) {
+  set value(T newValue) {
     _value = newValue;
     notifyListeners();
   }
