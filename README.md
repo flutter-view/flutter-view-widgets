@@ -23,30 +23,20 @@ A stateful widget that lets you hook into different [lifecycle events](https://f
 
 ## ReactiveWidget
 
-A wrapper of a Flutter **StreamWidget**, that monitors a **Listenable** such as a **[Model](https://pub.dartlang.org/documentation/scoped_model/latest/scoped_model/Model-class.html)**, and triggers an update when that **Listenable** updates. This allows for your tree of widgets to respond to model updates.
+A wrapper of a Flutter **StreamWidget**, that monitors a **Listenable** such as a **[ChangeNotifier](https://docs.flutter.dev/development/data-and-backend/state-mgmt/simple#changenotifier)**, or  **[Model](https://pub.dartlang.org/documentation/scoped_model/latest/scoped_model/Model-class.html)** and triggers an update when that **Listenable** updates. This allows for your tree of widgets to respond to model updates.
 
 [Documentation](https://docs.flutter-view.io/reference/tag-shortcuts#reactive)
 | [Usage guide](https://docs.flutter-view.io/guide/writing-reactive-code)
 
-# Reactive mixin
+## State
 
-It also adds the `Reactive` mixin class, that you can use to add reactive behaviors for classes that already extend a model class.
+A small wrapper for any value, making it listenable. This lets you make any value listenable, instead of having to extend **Model** or **ChangeNotifier**.
 
-To use extend your entity classes like this:
-
+### Example:
 ```Dart
-class MyEntity extends SomeModelClass with Reactive {
-   ...
-}
-```
-
-Then when listening with the [ReactiveWidget], instead of listening for
-the entity itself for changes like you would with a [Model] extending class,
-listen to the `.changes` property instead:
- 
-```Pug
-some-function(flutter-view)
-   reactive(watch='model.changes')
-     //- code here will change when model.notifyListeners() is called
- 
+final user = State(User(name: 'John'));
+user.addListener(() { print('updated'); });
+print(user.value); // prints John
+user.value = 'Mary'; // prints 'updated'
+print(user.value); // prints Mary
 ```

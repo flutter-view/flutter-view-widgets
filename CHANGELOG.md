@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.2.0-dev.1
+
+	- Added State class, letting you easily make normal values listenable
+
 ## 2.1.1-dev.1
 
 	- Added Reactive mixin to enable reactivity on entities that already extend a class
