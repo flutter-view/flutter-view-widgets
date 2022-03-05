@@ -5,4 +5,4 @@ library flutter_view_widgets;
 export 'package:scoped_model/scoped_model.dart' show Model;
 export 'src/lifecycle.dart';
 export 'src/reactive-widget.dart';
-export 'src/state.dart';
+export 'src/reactive.dart';

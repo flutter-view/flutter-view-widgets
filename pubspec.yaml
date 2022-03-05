@@ -2,7 +2,7 @@ name: flutter_view_widgets
 description: Flutter Dart tools library for flutter-view. These widgets allow some extra functionality for flutter-view, and are highly recommended for your flutter-view projects.
 homepage: https://github.com/flutter-view/flutter-view-widgets
 
-version: 2.2.0-dev.1
+version: 2.2.2-dev.1
 
 environment:
   sdk: ">=2.13.0 <3.0.0"

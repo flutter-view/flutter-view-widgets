@@ -1,44 +1,40 @@
+import 'package:scoped_model/scoped_model.dart';
 
-
-
-import 'package:flutter_view_widgets/flutter_view_widgets.dart';
-
-/// Mixin class to signify that the component is reactive.
-/// 
-/// Use this if your entities already extend a class. Otherwise just extend [Model] instead.
-/// To use extend your entity classes like this:
-/// 
+/// [Reactive] is a simple wrapper around a value to make it listenable for changes.
+/// This lets you make any value listenable, instead of having to extend [Model] or [ChangeNotifier].
+///
+/// [Reactive] extends [Model], meaning it is listenable. It also exposes
+/// a getter and a setter for the wrapped value. By setting a new value, notifyListeners is also called
+/// for you. This makes it possible to listen for changes and reactively rerender content.
+///
+/// ### Example:
+///
 /// ```Dart
-/// class MyEntity extends SomeModelClass with Reactive {
-///   ...
-/// }
+/// final user = Reactive(User(name: 'John'));
+/// user.addListener(() { print('updated'); });
+/// print(user.value); // prints John
+/// user.value = 'Mary'; // prints 'updated'
+/// print(user.value); // prints Mary
 /// ```
-/// 
-/// Then when listening with the [ReactiveWidget], instead of listening for
-/// the entity itself for changes like you would with a [Model] extending class,
-/// listen to the `.changes` property instead:
-/// 
-/// ```Pug
-/// some-function(flutter-view)
-///   reactive(watch='model.changes')
-///     //- code here will change when model.notifyListeners() is called
-/// 
-/// ```
-abstract class Reactive {
+class Reactive<T> extends Model {
+  Reactive(T e) : _value = e;
 
-  ReactiveModel _model = new ReactiveModel();
+  /// The wrapped value
+  T _value;
 
-  /// Use this to listen for changes with the reactive-widget
-  Model get changes {
-    return _model;
+  /// Gets the current value
+  get value {
+    return _value;
   }
 
-  /// Notify any listeners that this entity has been updated
-  notifyListeners() {
-    // ignore: invalid_use_of_protected_member
-    _model.notifyListeners();
+  /// Sets the new value, and calls notifyListeners
+  set value(newValue) {
+    _value = newValue;
+    notifyListeners();
+  }
+
+  @override
+  String toString() {
+    return value.toString();
   }
 }
-
-/// Simply only use the Model to check for updates
-class ReactiveModel extends Model {}

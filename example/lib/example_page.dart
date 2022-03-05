@@ -50,7 +50,7 @@ Lifecycle ExamplePage({ required ExampleModel model }) {
                       ),
                     ),
                     ReactiveWidget( // project://example/lib/example_page.pug#30,6
-                      watch: model.changes as Listenable,
+                      watch: model as Listenable,
                       builder: (context, $) {
                         return 
                         //-- TEXT ----------------------------------------------------------

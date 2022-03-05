@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.2.1-dev.1
+
+	- Rename State to Reactive to avoid namespace issues, remove old Reactive code since it duplicates ChangeNotifier behavior
+
+## 2.2.1-dev.1
+
+	- Forgot to export State
+
 ## 2.2.0-dev.1
 
 	- Added State class, letting you easily make normal values listenable

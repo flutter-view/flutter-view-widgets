@@ -28,13 +28,13 @@ A wrapper of a Flutter **StreamWidget**, that monitors a **Listenable** such as 
 [Documentation](https://docs.flutter-view.io/reference/tag-shortcuts#reactive)
 | [Usage guide](https://docs.flutter-view.io/guide/writing-reactive-code)
 
-## State
+## Reactive
 
 A small wrapper for any value, making it listenable. This lets you make any value listenable, instead of having to extend **Model** or **ChangeNotifier**.
 
 ### Example:
 ```Dart
-final user = State(User(name: 'John'));
+final user = Reactive(User(name: 'John'));
 user.addListener(() { print('updated'); });
 print(user.value); // prints John
 user.value = 'Mary'; // prints 'updated'
