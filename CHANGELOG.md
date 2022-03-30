@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.2.4-dev.1
+
+	- Add assert support for backwards compatibility
+
 ## 2.2.3-dev.1
 
 	- Reactive bugfix
