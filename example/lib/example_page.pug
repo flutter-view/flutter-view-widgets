@@ -28,9 +28,10 @@ example-page(flutter-view :model[ExampleModel])
 					//- When ExampleModel.notifyListeners is called (when someone types),
 					//- the below reactive widget automatically updates it child, updating the text
 					reactive(watch='model')
-						//- when the text changes in the model, it updates here
-						//- the ctl variable was created by the assign tag above
-						.text ${model.textController.text}
+						assign(name='text', :^value='model.textController.text')
+							//- when the text changes in the model, it updates here
+							//- the ctl variable was created by the assign tag above
+							.text ${model.textController.text}
 
 				.spacer(height=200)
 

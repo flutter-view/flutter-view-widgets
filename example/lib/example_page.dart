@@ -1,13 +1,4 @@
-// ignore_for_file: prefer_const_constructors
-// ignore_for_file: non_constant_identifier_names
-// ignore_for_file: unnecessary_import
-// ignore_for_file: dead_code
-// ignore_for_file: unused_element
-// ignore_for_file: unnecessary_cast
-// ignore_for_file: unnecessary_string_interpolations
-// ignore_for_file: invalid_null_aware_operator
-// ignore_for_file: avoid_unnecessary_containers
-// ignore_for_file: sized_box_for_whitespace
+// ignore_for_file: prefer_const_constructors, non_constant_identifier_names, unnecessary_import, dead_code, unused_element, unnecessary_cast, unnecessary_string_interpolations, unnecessary_brace_in_string_interps, invalid_null_aware_operator, avoid_unnecessary_containers, sized_box_for_whitespace
 	
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
@@ -20,10 +11,9 @@ Lifecycle ExamplePage({ required ExampleModel model }) {
     onDispose: model.dispose,
     child: Scaffold( // project://example/lib/example_page.pug#14,3
       appBar: AppBar( // project://example/lib/example_page.pug#16,4
-        title: 
-        //-- TITLE ----------------------------------------------------------
+        title: //-- TITLE ----------------------------------------------------------
         Container( // project://example/lib/example_page.pug#17,5
-          child: Text( 
+          child: const Text( 
             'Example App',
           ),
         ),
@@ -31,33 +21,35 @@ Lifecycle ExamplePage({ required ExampleModel model }) {
       body: Center( // project://example/lib/example_page.pug#19,4
         child: Column( 
           children: __flatten([
-
             //-- SPACER ----------------------------------------------------------
             Container( // project://example/lib/example_page.pug#21,5
               height: 200,
             ),
             DefaultTextStyle.merge( 
-              child: 
-              //-- MESSAGE-BOX ----------------------------------------------------------
+              child: //-- MESSAGE-BOX ----------------------------------------------------------
               Container( // project://example/lib/example_page.pug#23,5
                 child: Column( 
                   children: __flatten([
-
                     //-- GREETING ----------------------------------------------------------
                     Container( // project://example/lib/example_page.pug#25,6
-                      child: Text( 
+                      child: const Text( 
                         'Hello, you entered:',
                       ),
                     ),
                     ReactiveWidget( // project://example/lib/example_page.pug#30,6
                       watch: model as Listenable,
                       builder: (context, $) {
-                        return 
-                        //-- TEXT ----------------------------------------------------------
-                        Container( // project://example/lib/example_page.pug#33,7
-                          child: Text( 
-                            '${model.textController.text}',
-                          ),
+                        return Assign( // project://example/lib/example_page.pug#31,7
+                          name: 'text',
+                          value: model.textController.text,
+                          builder: (context, text) {
+                            return //-- TEXT ----------------------------------------------------------
+                            Container( // project://example/lib/example_page.pug#34,8
+                              child: Text( 
+                                '${model.textController.text}',
+                              ),
+                            );
+                          },
                         );
                       },
                     )
@@ -68,17 +60,15 @@ Lifecycle ExamplePage({ required ExampleModel model }) {
                 fontSize: 20,
               ),
             ),
-
             //-- SPACER ----------------------------------------------------------
-            Container( // project://example/lib/example_page.pug#35,5
+            Container( // project://example/lib/example_page.pug#36,5
               height: 200,
             ),
-
             //-- INPUT ----------------------------------------------------------
-            Container( // project://example/lib/example_page.pug#37,5
-              child: TextField( // project://example/lib/example_page.pug#39,6
+            Container( // project://example/lib/example_page.pug#38,5
+              child: TextField( // project://example/lib/example_page.pug#40,6
                 controller: model.textController,
-                decoration: InputDecoration( // project://example/lib/example_page.pug#40,7
+                decoration: InputDecoration( // project://example/lib/example_page.pug#41,7
                   hintText: 'Enter text',
                 ),
               ),

@@ -6,3 +6,4 @@ export 'package:scoped_model/scoped_model.dart' show Model;
 export 'src/lifecycle.dart';
 export 'src/reactive-widget.dart';
 export 'src/reactive.dart';
+export 'src/assign.dart';
