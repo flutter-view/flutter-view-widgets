@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.2.5-dev.1
+
+	- Fix null safety warning
+
 ## 2.2.4-dev.1
 
 	- Add assert support for backwards compatibility
